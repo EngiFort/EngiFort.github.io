@@ -30,10 +30,3 @@ ForEach ($thing in $things) {
     Write-Output "It highlights it using the GitHub style"
 }
 ```
-<script src="https://utteranc.es/client.js"
-        repo="EngiFort/EngiFort.github.io"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
