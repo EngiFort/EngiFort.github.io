@@ -31,7 +31,7 @@ ForEach ($thing in $things) {
 }
 ```
 <script src="https://utteranc.es/client.js"
-        repo="EngiFort.github.io"
+        repo="EngiFort/EngiFort.github.io"
         issue-term="pathname"
         theme="github-light"
         crossorigin="anonymous"
