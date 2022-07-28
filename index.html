@@ -2,17 +2,61 @@
 layout: none
 ---
 
-Here you can say lots of fun things about your site.
-
-Maybe say a some things about yourself.
-
-Or maybe what you plan to blog about.
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a><br>
-      <div style="height:150px;overflow-y: hidden;"> {{ post.content }}</div>
-      <p style="color red;">{{post.date | date: '%b %d, %Y' %}}</p>
-    </li>
-  {% endfor %}
-</ul>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: #2e2a28;   
+                background-image: linear-gradient(to right, #2e2a28,#696863,#696863,#696863,#2e2a28); 
+                overflow-x: hidden;
+            }
+            .sd1a_sub11dyqw{
+                background-color: #110f0f;
+                padding-top: 20%;
+                margin-top: -20%;
+                margin-left: -7px;
+                width: 100vw;
+                height: 7.3%;
+                box-shadow:  0px 2px 4px #050505;
+                background-image: linear-gradient(to right, #110f0f,#3a342e,#110f0f); 
+            }
+            .m018ynq9gyas5{
+                overflow-x: scroll;
+                border-radius: 5px 5px 5px 5px;
+                background-color: #d2cdc8;
+                margin-top: 70px;
+                margin-left: 19%;
+                width: 60%;
+                padding-left: 20px;
+                padding-right: 20px;
+                white-space: pre-wrap;
+            
+                box-shadow:1px 1px 2px #110f0f, 0 0 25px #110f0f, 0 0 5px #110f0f;
+                font-family: sans-serif;
+                overflow-x: hidden;
+                overflow-y: hidden;
+            }
+            .h281ibhaaa9ug{
+                background-color: #5c534b;
+                margin-left: -20px;
+                margin-top: -28px;
+                margin-bottom: -60px;
+                width: 110%;
+                height: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="sd1a_sub11dyqw">
+        </div>
+        <div class="m018ynq9gyas5">
+          {% for post in site.posts %}
+            <div style="font-weight: bold;font-size: 18px;"><a style="text-decoration:none;color: #b4561b;" href="{{ post.url }}">{{ post.title }}</a></div>
+            <div style="color: black;margin-top: -35px;font-size: 15px;">{{post.date | date: '%b %d, %Y' %}}</div>
+            <div style="color: #363636;margin-top: -25px">{{ post.content }}</div>
+            <div style="margin-bottom: -20px;margin-top: -15px;width: 100%;height: 2px;background-image: linear-gradient(#a49e96,#c5bfba);"></div>
+          {% endfor %}
+          <div class="h281ibhaaa9ug"></div>
+        </div>
+    </body>
+</html>
