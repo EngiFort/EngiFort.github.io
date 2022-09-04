@@ -2,7 +2,7 @@
 layout: none
 ---
 
-<html>
+<html id="1">
     <head>
         <style>
             p {
@@ -53,6 +53,7 @@ layout: none
     <body>
         <div class="sd1a_sub11dyqw">
         </div>
+        <script>document.getElementById("1").innerHTML = "";</script>
         <div class="m018ynq9gyas5">
           {% for post in site.posts %}
             <div style="font-weight: bold;font-size: 18px;"><a style="text-decoration:none;color: #b4561b;" href="{{ post.url }}">{{ post.title }}</a></div>
